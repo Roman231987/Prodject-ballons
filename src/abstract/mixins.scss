@@ -1,0 +1,15 @@
+// Міксіни -це можливість робити шаблони коду і перевикористовувати їх. Можливо добавляти аргументи.
+@mixin style-link($color) {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color;
+}
+
+
+
+
+
+
+
+ 

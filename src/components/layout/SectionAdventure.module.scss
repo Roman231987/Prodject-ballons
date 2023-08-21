@@ -1,0 +1,25 @@
+@use "../../index.scss" as *;
+
+.section__adventure {
+  height: 95vh;
+  position: relative;
+  background: linear-gradient(
+      90deg,
+      rgba($color-brown-light, 0.7) 15.63%,
+      rgba($color-black, 0.7) 100%
+    ),
+    url(../../images/ballons-backgraund.jpg) center / cover no-repeat;
+  clip-path: polygon(0 0, 100% 16%, 100% 100%, 0 84%);
+  &_wraper {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 6rem;
+    padding-top: 25rem;
+  }
+}
+
+.icon__styles {
+  width: 6.3rem;
+  color: $color-brown-light;
+}

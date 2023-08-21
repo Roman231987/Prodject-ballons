@@ -1,0 +1,26 @@
+@use "../../index.scss" as *;
+
+.btn_text {
+  &:link,
+  &:visited {
+    color: $color-gray;
+    font-size: $font-size-parpgraph;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.2rem;
+    text-decoration: none;
+    padding: 1rem;
+    border-bottom: 0.1rem $color-brown-dark solid;
+    display: inline-block; // Щоб працювала анімація, елемент не повинен бути  inline;
+    transition: 0.5s all;
+  }
+  &:hover {
+    background-color: $color-brown-dark;
+    color: $color-white;
+    box-shadow: $box-shadow;
+    transform: translateY(-0.3rem);
+  }
+  &:active {
+    transform: translateY(0rem);
+  }
+}

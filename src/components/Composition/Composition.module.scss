@@ -1,0 +1,34 @@
+@use "../../index.scss" as *;
+
+.composition {
+  &__photo {
+    width: 55%;
+    box-shadow: $box-shadow;
+    border-radius: 0.5rem;
+    position: absolute;
+    z-index: 10;
+    transition: all 0.2s; // Робить плавну анімацію.
+    outline-offset: 0.5rem;
+    &_n1 {
+      top: 0;
+      left: 2rem;
+    }
+    &_n2 {
+      top: 9.5rem;
+      right: 2rem;
+    }
+    &_n3 {
+      top: 17.8rem;
+      left: 4.5rem;
+    }
+    &:hover {
+      outline: 1.2rem solid $color-brown-light;
+      transform: scale(1.1);
+      z-index: 20;
+    }
+  }
+  position: relative;
+  &:hover &__photo:not(:hover) {
+    transform: scale(0.95);
+  }
+}

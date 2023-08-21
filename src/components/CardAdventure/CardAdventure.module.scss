@@ -1,0 +1,19 @@
+@use "../../index.scss" as *;
+
+.card__adventure {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #ffffffcc;
+  box-shadow: $box-shadow;
+  padding: 2.5rem 2.5rem 0rem 2.5rem;
+  border-radius: 0.5rem;
+  width: 19%;
+  transition: 0.2s all;
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.05);
+  }
+  &_icon {
+    margin-bottom: 2.4rem;
+  }
+}
