@@ -10,7 +10,9 @@ const SectionTour = () => {
   return (
     <section className={styles.sectionTour}>
       <div className="text_align_center margin-bottom-80px">
-        <TitleSecondary>НАЙБІЛЬШ ПОПУЛЯРНІ ТУРИ</TitleSecondary>
+        <TitleSecondary color_h2_text_is_white={false}>
+          НАЙБІЛЬШ ПОПУЛЯРНІ ТУРИ
+        </TitleSecondary>
       </div>
       <div className={styles.sectionTour__wraper}>
         <CardTour
@@ -65,7 +67,7 @@ const SectionTour = () => {
           textButton={"ЗАБРОНЮВАТИ"}
         />
       </div>
-      <div className={styles.sectionTour__button}>
+      <div className="text_align_center">
         <Button btn_animateds={false}>ЗАБРОНЮВАТИ</Button>
       </div>
     </section>

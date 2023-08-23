@@ -1,0 +1,52 @@
+@use "../../../index.scss" as *;
+
+.cardFeedBack {
+  display: flex;
+  width: 85%;
+  background: rgba($color-white, 0.75);
+  box-shadow: $box-shadow;
+  margin: 0 auto;
+  padding: 6rem 6rem 3rem 6rem;
+  transform: skewX(330deg);
+
+  & > * {
+    transform: skewX(-330deg);
+  }
+
+  &__img {
+    width: 16.7rem;
+    height: 16.7rem;
+    border-radius: 100rem;
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-shape-outside: circle(50% at 50% 50%);
+    margin-right: 4rem;
+    overflow: hidden;
+    position: relative;
+    img {
+      height: 100%;
+      transform: scale(1.2);
+      transition: all 0.5s;
+    }
+  }
+  &__name {
+    color: $color-white;
+    text-align: center;
+    font-size: $font-size-parpgraph-h3;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    opacity: 0;
+    transition: all 0.5s;
+  }
+  &:hover &__name {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  &:hover img {
+    transform: scale(1);
+    filter:blur(.3rem) brightness(70%)
+  }
+}

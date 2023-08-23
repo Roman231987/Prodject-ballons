@@ -16,12 +16,16 @@
   );
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
   //////////////////////////////////////////////
   transition: all 0.4s;
   backface-visibility: hidden; // видимість тильної сторони прихована (Тінь перестає дьоргатись)
+
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: $shadow-h2; // Тінь Текста  h2   TitleSecondary
+  }
+  &_white {
+    color: $color-white;
   }
 }
