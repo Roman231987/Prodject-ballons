@@ -1,30 +1,30 @@
 import TitleSecondary from "../TitleSecondary/TitleSecondary";
-import CardWithText from "../CardWithText/CardWithText";
-import styles from "./SectionAbout.module.scss";
-import ButtonText from "../ButtonText/ButtonText";
+import ButtonText from "../Buttons/ButtonText/ButtonText";
 import Composition from "../Composition/Composition";
+import CardWithText from "../Cards/CardWithText/CardWithText";
+import styles from "./SectionAbout.module.scss";
 
 const SectionAbout = () => {
   return (
-    <section className={styles.section__about}>
+    <section className={styles.sectionAbout}>
       <div className="text_align_center margin-bottom-80px">
-        <TitleSecondary />
+        <TitleSecondary>Неймовірне відчуття свободи</TitleSecondary>
       </div>
       <div className={styles.wraper}>
         <div className={styles.wraper__row}>
           <CardWithText
-            text_title_h3={"ПОЗВОЛЬТЕ СЕБЕ ПРИКЛЮЧЕНИЕ"}
+            text_title_h3={"ДОЗВОЛЬТЕ СОБІ ПРИГОДИ"}
             paragraph_text={
-              "Задача организации, в особенности же дальнейшее развитие различных форм деятельности влечет за собой процесс внедрениям и модернизации соответствующий условий активизации. Таким образом начало повседневной работы по формированию позиции влечет."
+              "Завдання організації, особливо ж розвиток різних форм діяльності тягне за собою процес впровадження i модернізації відповідних умов активізації. Таким чином початок повсякденної роботи з формування позиції тягне."
             }
           />
           <CardWithText
-            text_title_h3={"ВВЕРХ НА 6000 МЕТРОВ НАД УРОВНЕМ МОРЯ"}
+            text_title_h3={"ВВЕРХ НА 6000 МЕТРІВ НАД РІВНЕМ МОРЯ"}
             paragraph_text={
-              "Задача организации, в особенности же дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации. Таким образом начало повседневной работы по формированию позиции влечет."
+              "Завдання організації, особливо ж розвиток різних форм діяльності тягне за собою процес впровадження i модернізації відповідних умов активізації. Таким чином початок повсякденної роботи з формування позиції тягне."
             }
           />
-          <ButtonText> Узнать больше &rarr;</ButtonText>
+          <ButtonText> Дізнатися більше &rarr;</ButtonText>
         </div>
         <div className={styles.wraper__img}>
           <Composition />

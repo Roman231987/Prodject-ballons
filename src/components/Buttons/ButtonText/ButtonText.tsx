@@ -6,7 +6,7 @@ interface ButtonTextProps {
 
 const ButtonText: React.FC<ButtonTextProps> = ({ children }) => {
   return (
-    <a className={styles.btn_text} href="##">
+    <a className={styles.btnText} href="##">
       {children}
     </a>
   );

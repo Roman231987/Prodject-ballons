@@ -1,6 +1,6 @@
-@use "../../index.scss" as *;
+@use "../../../index.scss" as *;
 
-.btn_text {
+.btnText {
   &:link,
   &:visited {
     color: $color-gray;

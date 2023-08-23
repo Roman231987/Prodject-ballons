@@ -13,8 +13,8 @@ const CardAdventure: React.FC<CardAdventureProps> = ({
   paragraph_text,
 }) => {
   return (
-    <div className={styles.card__adventure}>
-      <div className={styles.card__adventure_icon}>{children}</div>
+    <div className={styles.cardAdventure}>
+      <div className={styles.cardAdventure__icon}>{children}</div>
       <CardWithText
         text_title_h3={text_title_h3}
         paragraph_text={paragraph_text}

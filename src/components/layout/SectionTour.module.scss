@@ -1,0 +1,11 @@
+.sectionTour {
+  padding: 8rem 10rem 8rem 10rem;
+  &__wraper {
+    display: flex;
+    gap: 6rem;
+    margin-bottom: 8rem;
+  }
+  &__button {
+    text-align: center;
+  }
+}

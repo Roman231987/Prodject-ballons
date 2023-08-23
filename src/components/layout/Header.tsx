@@ -1,5 +1,5 @@
 import Icon_logo from "../../images/icon/Icon-logo.svg";
-import Butto from "../Button/Button";
+import Button from "../Buttons/Button/Button";
 import styles from "./Header.module.scss";
 
 const Header = () => {
@@ -13,13 +13,13 @@ const Header = () => {
       <div className={styles.header__box}>
         <h1 className={styles.titleFirst}>
           <span className={styles.titleFirst__main}>
-            ТУРЫ НА ВОЗДУШНОМ ШАРЕ
+            ТУРИ НА ПОВІТРЯНІЙ КУЛІ
           </span>
           <span className={styles.titleFirst__secondary}>
-            незабываемое приключение ждет вас
+            незабутня пригода чекає на вас
           </span>
         </h1>
-        <Butto btn_animateds={true}>НАШ КАТАЛОГ</Butto>
+        <Button btn_animateds={true}>НАШ КАТАЛОГ</Button>
       </div>
     </header>
   );
