@@ -2,7 +2,7 @@ import styles from "./BgVideo.module.scss";
 
 interface BgVideoProps {
   videoType_1?: string;
-  videoType_2?: string;
+  videoType_2: string;
 }
 
 const BgVideo: React.FC<BgVideoProps> = ({ videoType_1, videoType_2 }) => {

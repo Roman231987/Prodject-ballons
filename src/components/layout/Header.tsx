@@ -1,5 +1,5 @@
 import Icon_logo from "../../images/icon/Icon-logo.svg";
-import Button from "../Buttons/Button/Button";
+import ButtonlinkType from "../Buttons/ButtonlinkType/ButtonlinkType";
 import styles from "./Header.module.scss";
 
 const Header = () => {
@@ -19,7 +19,7 @@ const Header = () => {
             незабутня пригода чекає на вас
           </span>
         </h1>
-        <Button btn_animateds={true}>НАШ КАТАЛОГ</Button>
+        <ButtonlinkType btn_animateds={true}>НАШ КАТАЛОГ</ButtonlinkType>
       </div>
     </header>
   );

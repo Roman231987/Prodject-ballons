@@ -1,24 +1,23 @@
 @use "../../../index.scss" as *;
 .btn {
-  @include style-link($color-gray);
-  padding: 1.5rem 4rem;
-  border-radius: 5rem;
-  display: inline-block;
-  transition: all 0.2s;
-  position: relative;
-  font-size: $font-size-parpgraph-h3;
-  text-decoration: none;
-  border: none;
-  background: $color-brown-light;
-  color: $color-white;
-  letter-spacing: .5rem;
+  &:link,
+  &:visited {
+    @include style-link($color-gray);
+    background: $color-white;
+    padding: 1.5rem 4rem;
+    border-radius: 5rem;
+    display: inline-block;
+    transition: all 0.3s;
+    position: relative;
+    font-size: $font-size-parpgraph-h3;
+    text-decoration: none;
+  }
   &:hover {
     transform: translateY(-0.2rem);
     box-shadow: $box-shadow;
     &::after {
       opacity: 0;
       transform: scaleX(1.4) scaleY(1.6);
-      background: $color-brown-light;
     }
   }
   &:active {

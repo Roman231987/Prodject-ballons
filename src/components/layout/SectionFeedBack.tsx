@@ -1,11 +1,11 @@
 import hot_air_balloons_1 from "../../images/video/hot_air_balloons_1.mp4";
 import hot_air_balloons_2 from "../../images/video/hot_air_balloons_2.webm";
-import Button from "../Buttons/Button/Button";
 import CardFeedBack from "../Cards/CardFeedBack/CardFeedBack";
 import TitleSecondary from "../TitleSecondary/TitleSecondary";
 import feed_back_1 from "../../images/card-feed_back/feed_back_1.jpg";
 import feed_back_2 from "../../images/card-feed_back/feed_back_2.jpg";
 import BgVideo from "../BgVideo/BgVideo";
+import ButtonlinkType from "../Buttons/ButtonlinkType/ButtonlinkType";
 import styles from "./SectionFeedBack.module.scss";
 
 const SectionFeedBack = () => {
@@ -39,7 +39,7 @@ const SectionFeedBack = () => {
         ></CardFeedBack>
       </div>
       <div className="text_align_center">
-        <Button btn_animateds={false}>ЗАБРОНЮВАТИ</Button>
+        <ButtonlinkType btn_animateds={false}>ЗАБРОНЮВАТИ</ButtonlinkType>
       </div>
     </section>
   );

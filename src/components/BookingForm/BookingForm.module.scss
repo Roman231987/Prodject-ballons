@@ -1,0 +1,87 @@
+@use "../../index.scss" as *;
+
+.form {
+  width: 75%;
+  padding-top: 5rem;
+  padding-left: 5rem;
+  &__group:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  &__group:nth-child(4) {
+    margin-bottom: 4rem;
+  }
+  &__input {
+    font-size: $font-size-parpgraph;
+    letter-spacing: 0.2rem;
+    font-weight: 400;
+    color: $color-black;
+    padding: 1.8rem 0 1.8rem 2.2rem;
+    background: $color-white;
+    width: 51%;
+    border: none;
+    border-bottom: 0.2rem solid transparent;
+    border-radius: 0.5rem;
+    box-shadow: $box-shadow;
+    &:focus {
+      outline: none;
+      border-bottom: 0.3rem solid #66d763;
+    }
+    &:focus:invalid {
+      border-bottom: 0.3rem solid #d76363;
+    }
+  }
+  &__label {
+    color: $color-gray;
+    font-size: $font-size-parpgraph;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    display: block;
+    margin-top: 1rem;
+    margin-left: 1.7rem;
+    transition: 0.3s all; //  Перехід за .3с. все
+  }
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-2rem);
+  }
+  &__group_radio {
+    width: 35%;
+    display: inline-block;
+  }
+  &__input_radio {
+    display: none;
+  }
+  &__label_radio {
+    position: relative;
+    cursor: pointer;
+    padding-left: 4rem;
+  }
+  &__button_radio {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 0.5rem solid $color-brown-light;
+    display: block;
+    position: absolute;
+    left: 0rem;
+    top: -0.6rem;
+    &::after {
+      content: "";
+      display: block;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      background: $color-brown-light;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: 0.2s all;
+    }
+  }
+  &__input_radio:checked ~ &__label_radio &__button_radio::after {
+    opacity: 1;
+  }
+}

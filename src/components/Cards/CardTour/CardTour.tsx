@@ -1,4 +1,4 @@
-import Button from "../../Buttons/Button/Button";
+import ButtonlinkType from "../../Buttons/ButtonlinkType/ButtonlinkType";
 import styles from "./CardTour.module.scss";
 
 interface CardTourProps {
@@ -56,7 +56,7 @@ const CardTour: React.FC<CardTourProps> = ({
           <p className={`${styles.cardTour__text} ${styles.cardTour__text_2}`}>
             {paragraphText_2}
           </p>
-          <Button btn_animateds={false}>{textButton}</Button>
+          <ButtonlinkType btn_animateds={false}>{textButton}</ButtonlinkType>
         </div>
       </div>
     </div>

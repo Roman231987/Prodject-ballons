@@ -1,0 +1,20 @@
+@use "../../index.scss" as *;
+
+.SectionBooking {
+  background: linear-gradient(90deg, $color-brown-light, $color-brown-dark);
+  padding: 10rem;
+}
+.booking {
+  height: 50rem;
+  background: linear-gradient(
+      110deg,
+      rgba(255, 255, 255, 0.8491771708683473) 0%,
+      rgba(255, 255, 255, 0.8463760504201681) 55%,
+      rgba(186, 133, 84, 0.10127801120448177) 55%,
+      rgba(161, 79, 3, 0.10407913165266103) 100%
+    ),
+    url(../../images/bg_form.jpg) center / cover no-repeat;
+  box-shadow: $box-shadow;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}

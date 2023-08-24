@@ -3,6 +3,7 @@ import SectionAbout from "./components/layout/SectionAbout";
 import SectionAdventure from "./components/layout/SectionAdventure";
 import SectionFeedBack from "./components/layout/SectionFeedBack";
 import SectionTour from "./components/layout/SectionTour";
+import SectionBooking from "./components/layout/SectionBooking";
 import styles from "./App.module.scss";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <SectionAdventure />
           <SectionTour />
           <SectionFeedBack />
+          <SectionBooking />
         </main>
       </div>
       <footer></footer>

@@ -3,16 +3,14 @@ import cardTour_1 from "../../images/card-tour/card-tour_1.jpg";
 import cardTour_2 from "../../images/card-tour/card-tour_2.jpg";
 import cardTour_3 from "../../images/card-tour/card-tour_3.jpg";
 import CardTour from "../Cards/CardTour/CardTour";
-import Button from "../Buttons/Button/Button";
+import ButtonlinkType from "../Buttons/ButtonlinkType/ButtonlinkType";
 import styles from "./SectionTour.module.scss";
 
 const SectionTour = () => {
   return (
     <section className={styles.sectionTour}>
       <div className="text_align_center margin-bottom-80px">
-        <TitleSecondary color_h2_text_is_white={false}>
-          НАЙБІЛЬШ ПОПУЛЯРНІ ТУРИ
-        </TitleSecondary>
+        <TitleSecondary>НАЙБІЛЬШ ПОПУЛЯРНІ ТУРИ</TitleSecondary>
       </div>
       <div className={styles.sectionTour__wraper}>
         <CardTour
@@ -68,7 +66,7 @@ const SectionTour = () => {
         />
       </div>
       <div className="text_align_center">
-        <Button btn_animateds={false}>ЗАБРОНЮВАТИ</Button>
+        <ButtonlinkType btn_animateds={false}>ЗАБРОНЮВАТИ</ButtonlinkType>
       </div>
     </section>
   );
