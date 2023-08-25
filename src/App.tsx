@@ -4,6 +4,7 @@ import SectionAdventure from "./components/layout/SectionAdventure";
 import SectionFeedBack from "./components/layout/SectionFeedBack";
 import SectionTour from "./components/layout/SectionTour";
 import SectionBooking from "./components/layout/SectionBooking";
+import Footer from "./components/layout/Footer";
 import styles from "./App.module.scss";
 
 function App() {
@@ -18,8 +19,8 @@ function App() {
           <SectionFeedBack />
           <SectionBooking />
         </main>
+        <Footer />
       </div>
-      <footer></footer>
     </div>
   );
 }
