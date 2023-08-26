@@ -5,12 +5,14 @@ import SectionFeedBack from "./components/layout/SectionFeedBack";
 import SectionTour from "./components/layout/SectionTour";
 import SectionBooking from "./components/layout/SectionBooking";
 import Footer from "./components/layout/Footer";
+import Navigation from "./components/layout/Navigation";
 import styles from "./App.module.scss";
 
 function App() {
   return (
     <div className="App">
       <div className={styles.container}>
+        <Navigation />
         <Header />
         <main>
           <SectionAbout />
