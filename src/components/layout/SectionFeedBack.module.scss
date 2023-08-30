@@ -1,6 +1,14 @@
+@use "../../index.scss" as *;
+
 .sectionFeedBack {
-     padding: 8rem 14rem;
-     position: relative;
+  padding: 8rem 14rem;
+  position: relative;
+  @include raspoond(tab-land_1240px) {
+    padding: 8rem 2rem;
+  }
+  @include raspoond(tab-port_900px) {
+    padding: 3rem 1rem;
+  }
   &__Wraper {
     display: flex;
     flex-direction: column;

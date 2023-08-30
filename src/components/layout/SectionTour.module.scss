@@ -1,8 +1,24 @@
+@use "../../index.scss" as *;
+
 .sectionTour {
   padding: 8rem 10rem 8rem 10rem;
+  @include raspoond(tab-land_1240px) {
+    padding: 5rem 2rem 5rem 2rem;
+  }
   &__wraper {
     display: flex;
     gap: 6rem;
     margin-bottom: 8rem;
+    @include raspoond(tab-land_1240px) {
+      gap: 2rem;
+    }
+    @include raspoond(tab-port_900px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 4rem;
+    }
+    @include raspoond(phone_600) {
+      gap: 6rem;
+    }
   }
 }

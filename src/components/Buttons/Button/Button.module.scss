@@ -11,7 +11,11 @@
   border: none;
   background: $color-brown-light;
   color: $color-white;
-  letter-spacing: .5rem;
+  letter-spacing: 0.5rem;
+  @include raspoond(tab-land_1240px) {
+    font-size: 1.5rem;
+    padding: 1.5rem 3rem;
+  }
   &:hover {
     transform: translateY(-0.2rem);
     box-shadow: $box-shadow;

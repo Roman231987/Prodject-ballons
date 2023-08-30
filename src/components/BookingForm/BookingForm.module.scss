@@ -4,6 +4,17 @@
   width: 75%;
   padding-top: 5rem;
   padding-left: 5rem;
+
+  @include raspoond(tab-port_900px) {
+    width: 100%;
+    padding-top: 3rem;
+    padding-left: 5rem;
+  }
+  &__group {
+    @include raspoond(tab-port_900px) {
+      width: 60%;
+    }
+  }
   &__group:not(:last-child) {
     margin-bottom: 2rem;
   }
@@ -29,6 +40,9 @@
     &:focus:invalid {
       border-bottom: 0.3rem solid #d76363;
     }
+    @include raspoond(tab-port_900px) {
+      width: 100%;
+    }
   }
   &__label {
     color: $color-gray;
@@ -46,8 +60,16 @@
     transform: translateY(-2rem);
   }
   &__group_radio {
-    width: 35%;
     display: inline-block;
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+    @include raspoond(tab-port_900px) {
+      display: block;
+      &:not(:last-child) {
+        margin-bottom: 2rem;
+      }
+    }
   }
   &__input_radio {
     display: none;

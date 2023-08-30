@@ -16,4 +16,7 @@
   &__icon {
     margin-bottom: 2.4rem;
   }
+  @include raspoond(tab-port_900px) {
+    width: 100%;
+  }
 }

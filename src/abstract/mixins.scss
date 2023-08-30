@@ -6,10 +6,29 @@
   color: $color;
 }
 
+@mixin raspoond($breakpoint) {
+  
+  @if $breakpoint == tab-land_1240px {
+    @media only screen and (max-width: 1240px) {
+      @content;
+    }
+  }
 
+  @if $breakpoint == tab-port_900px {
+    @media only screen and (max-width: 900px) {
+      @content;
+    }
+  }
 
+  @if $breakpoint == phone_600 {
+    @media only screen and (max-width: 600px) {
+      @content;
+    }
+  }
 
-
-
-
- 
+  @if $breakpoint == big-screen_1800 {
+    @media only screen and (min-width: 1800px) {
+      @content;
+    }
+  }
+}

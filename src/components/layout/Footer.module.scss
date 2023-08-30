@@ -7,19 +7,32 @@
     justify-content: center;
     align-items: flex-end;
     height: 38rem;
-    padding: 8rem 23.5rem;
+    padding: 8rem 1rem;
     position: relative;
+    @include raspoond(tab-port_900px) {
+      align-items: center;
+      justify-content: flex-start;
+      padding: 8rem 15rem;
+    }
   }
   &__logo_img {
     position: absolute;
-    left: 45%;
+    left: 44%;
     top: 20%;
     width: 12rem;
+    @include raspoond(tab-port_900px) {
+      left: 75%;
+      top: 14%;
+    }
   }
   &__list {
     display: flex;
     gap: 5rem;
     list-style: none;
+    @include raspoond(tab-port_900px) {
+      flex-direction: column;
+      gap: 4rem;
+    }
     &_link {
       &:link,
       &:visited {

@@ -3,6 +3,12 @@
 .SectionBooking {
   background: linear-gradient(90deg, $color-brown-light, $color-brown-dark);
   padding: 10rem;
+  @include raspoond(tab-land_1240px) {
+    padding: 7rem 5rem;
+  }
+  @include raspoond(tab-port_900px) {
+    padding: 5rem 4rem;
+  }
 }
 .booking {
   height: 50rem;
@@ -17,4 +23,14 @@
   box-shadow: $box-shadow;
   border-radius: 0.5rem;
   overflow: hidden;
+  @include raspoond(tab-port_900px) {
+    background: linear-gradient(
+        110deg,
+        rgba(255, 255, 255, 0.8491771708683473) 0%,
+        rgba(255, 255, 255, 0.8463760504201681) 550%,
+        rgba(186, 133, 84, 0.10127801120448177) 55%,
+        rgba(161, 79, 3, 0.10407913165266103) 100%
+      ),
+      url(../../images/bg_form.jpg) center / cover no-repeat;
+  }
 }

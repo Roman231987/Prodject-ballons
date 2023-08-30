@@ -18,11 +18,20 @@
   }
   &__box {
     position: absolute;
-    top: 40%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
     text-align: center;
+  }
+  @include raspoond(tab-land_1240px) {
+    height: 85vh;
+  }
+  @include raspoond(tab-port_900px) {
+    height: 70vh;
+  }
+  @include raspoond(phone_600) {
+    height: 50vh;
   }
 }
 
@@ -41,6 +50,12 @@
     animation-delay: 1s;
     animation-timing-function: ease;
     backface-visibility: hidden; // видимість тильної сторони прихована (Тінь перестає дьоргатись)
+    @include raspoond(tab-land_1240px) {
+      font-size: 4rem;
+    }
+    @include raspoond(tab-port_900px) {
+      letter-spacing: 0.5rem;
+    }
   }
   &__secondary {
     display: block;
@@ -54,6 +69,13 @@
     animation-timing-function: ease;
     backface-visibility: hidden; // видимість тильної сторони прихована (Тінь перестає дьоргатись)
     margin-bottom: 5rem;
+    @include raspoond(tab-land_1240px) {
+      font-size: 3.5rem;
+      margin-bottom: 3.5rem;
+    }
+    @include raspoond(tab-port_900px) {
+      letter-spacing: 0.3rem;
+    }
   }
 }
 // Анімація яка штовхає текст з ліва на право.

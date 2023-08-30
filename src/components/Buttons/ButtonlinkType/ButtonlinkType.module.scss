@@ -11,6 +11,10 @@
     position: relative;
     font-size: $font-size-parpgraph-h3;
     text-decoration: none;
+    @include raspoond(tab-land_1240px) {
+      font-size: 1.5rem;
+      padding: 1.5rem 3rem;
+    }
   }
   &:hover {
     transform: translateY(-0.2rem);

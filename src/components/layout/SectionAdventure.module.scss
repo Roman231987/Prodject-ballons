@@ -1,7 +1,7 @@
 @use "../../index.scss" as *;
 
 .section__adventure {
-  height: 95vh;
+  // height: 95vh;
   position: relative;
   background: linear-gradient(
       90deg,
@@ -15,10 +15,21 @@
     justify-content: center;
     margin: 0 auto;
     gap: 6rem;
-    padding: 21.5rem 8rem;
+    padding: 21rem 10rem;
+    @include raspoond(tab-land_1240px) {
+      padding: 15rem 2rem;
+      gap: 2rem;
+    }
+    @include raspoond(tab-port_900px) {
+      flex-direction: column;
+      padding: 25rem 10rem;
+      gap: 4rem;
+    }
+    @include raspoond(phone_600) {
+      gap: 3rem;
+    }
   }
 }
-
 .icon__styles {
   width: 6.3rem;
   color: $color-brown-light;
