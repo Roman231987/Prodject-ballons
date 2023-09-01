@@ -44,4 +44,10 @@ body {
   font-weight: 400;
   font-size: $font-size-parpgraph;
   letter-spacing: 0.2rem;
+  @include raspoond(tab-port_900px) {
+    padding: 2rem;
+  }
+  @include raspoond(phone_600) {
+    padding: 0;
+  }
 }
